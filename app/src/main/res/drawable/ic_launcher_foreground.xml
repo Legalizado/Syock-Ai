@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    Desenho do ícone do StockAi: uma caixa de estoque em 3D (isométrica)
+    com faixas que lembram prateleiras, e um brilho no canto.
+    Tudo dentro da "zona segura" central (66 × 66 dp), para não ser
+    cortado pelo formato do ícone (círculo, quadrado arredondado etc.).
+-->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+
+    <!-- Tampa da caixa (face de cima) -->
+    <path
+        android:fillColor="#E8F1F3"
+        android:pathData="M54,32 L74,42 L54,52 L34,42 Z" />
+
+    <!-- Lateral esquerda -->
+    <path
+        android:fillColor="#0F4C5C"
+        android:pathData="M34,42 L54,52 L54,76 L34,66 Z" />
+
+    <!-- Lateral direita (um pouco mais clara, para dar volume) -->
+    <path
+        android:fillColor="#1A6577"
+        android:pathData="M54,52 L74,42 L74,66 L54,76 Z" />
+
+    <!-- Faixas das "prateleiras" na lateral esquerda -->
+    <path
+        android:strokeColor="#E8F1F3"
+        android:strokeWidth="2"
+        android:strokeLineCap="round"
+        android:pathData="M38,52 L50,58 M38,60 L50,66" />
+
+    <!-- Faixas das "prateleiras" na lateral direita -->
+    <path
+        android:strokeColor="#E8F1F3"
+        android:strokeWidth="2"
+        android:strokeLineCap="round"
+        android:pathData="M58,58 L70,52 M58,66 L70,60" />
+
+    <!-- Contorno para destacar as arestas -->
+    <path
+        android:strokeColor="#0A3540"
+        android:strokeWidth="1.5"
+        android:strokeLineJoin="round"
+        android:pathData="M54,32 L74,42 L74,66 L54,76 L34,66 L34,42 Z M34,42 L54,52 L74,42 M54,52 L54,76" />
+
+    <!-- Brilho (estrela de 4 pontas) no canto superior direito -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M70,27 Q70.8,32.2 76,33 Q70.8,33.8 70,39 Q69.2,33.8 64,33 Q69.2,32.2 70,27 Z" />
+</vector>
